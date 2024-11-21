@@ -1,42 +1,28 @@
-// Red Square
-const squareRedShow = document.querySelector("#squareRedShow");
+// Blue Square
+const squareBlueShowImg = document.querySelector("#squareBlueShowImg");
 
-const squareRedButton = document.querySelector("#squareRedButton");
+const squareBlueButton = document.querySelector("#squareBlueButton");
 
-console.log(squareRedButton)
+console.log(squareBlueShowImg, squareBlueButton);
 
-squareRedButton.addEventListener("click", function () {
+const newBlueImg= document.createElement("img");
+
+newBlueImg.src = "hamburger.png"
+newBlueImg.alt = "hamburger icon"
+
+newBlueImg.classList.add("hamburgerIcon");
+newBlueImg.classList.add("hidden")
+
+
+
+squareBlueShowImg.appendChild(newBlueImg);
+squareBlueButton.addEventListener("click", function() {
+
   console.log("Button is clicked!");
 
-  console.log(squareRedShow);
+  squareBlueShowImg.classList.toggle("hidden");
 
-
-
-  squareRedShow.classList.toggle("hidden");
 });
-
-
-
-const squareRedShowText = document.querySelector("#squareRedButton");
-
-console.log(squareRedShowText,squareRedButton);
-
-
-squareRedButton.addEventListener("click", function () {
- console.log("Button is clicked")
-
- const squareRedText = document. 
- createElement ("p");
- console.log(squareRedText);
-
- squareRedText.textContent = " Jeg er tekst i en rød boks";
-
- squareRedText.classList.toggle("hidden");
-
- squareRedShowText.appendChild
- (squareRedText);
-})
-
 // Red Square
 // Lag variable som henter ID+ene som hører til red square
 // set opp en event listener til red square knappen
