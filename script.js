@@ -1,18 +1,46 @@
-// Green Square
-const squareGreenHide = document.querySelector("#squareGreenHide");
+// Red Square
+const squareRedShow = document.querySelector("#squareRedShow");
 
-const squareGreenButton= document.querySelector("#squareGreenButton");
+const squareRedButton = document.querySelector("#squareRedButton");
 
-console.log(squareGreenHide, squareGreenButton)
+console.log(squareRedButton)
 
-squareGreenButton.addEventListener("click", function(){
-  console.log(" Button is clicked!");
+squareRedButton.addEventListener("click", function () {
+  console.log("Button is clicked!");
 
-  console.log("squareGreenHide");
+  console.log(squareRedShow);
 
-  console.log("SquaregreenShow");
 
-  squareGreenHide.classList.add("hidden");
+
+  squareRedShow.classList.toggle("hidden");
 });
 
-''
+
+
+const squareRedShowText = document.querySelector("#squareRedButton");
+
+console.log(squareRedShowText,squareRedButton);
+
+
+squareRedButton.addEventListener("click", function () {
+ console.log("Button is clicked")
+
+ const squareRedText = document. 
+ createElement ("p");
+ console.log(squareRedText);
+
+ squareRedText.textContent = " Jeg er tekst i en rød boks";
+
+ squareRedText.classList.toggle("hidden");
+
+ squareRedShowText.appendChild
+ (squareRedText);
+})
+
+// Red Square
+// Lag variable som henter ID+ene som hører til red square
+// set opp en event listener til red square knappen
+// Bonus: Leg til funksjonenalliteten til red square i den anonyme
+
+
+
