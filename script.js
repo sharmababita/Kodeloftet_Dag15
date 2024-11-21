@@ -1,32 +1,21 @@
-// Blue Square
-const squareBlueShowImg = document.querySelector("#squareBlueShowImg");
+// Blue square
+const newBlueImg = document.querySelector("#newBlueImg");
 
 const squareBlueButton = document.querySelector("#squareBlueButton");
 
-console.log(squareBlueShowImg, squareBlueButton);
+console.log(newBlueImg, squareBlueButton);
 
-const newBlueImg= document.createElement("img");
 
-newBlueImg.src = "hamburger.png"
-newBlueImg.alt = "hamburger icon"
+newBlueImg.src = "hamburger.png";
+newBlueImg.alt = "hamburger icon";
 
 newBlueImg.classList.add("hamburgerIcon");
-newBlueImg.classList.add("hidden")
+newBlueImg.classList.add("hidden");
 
+newBlueImg.appendChild(squareBlueButton);
 
-
-squareBlueShowImg.appendChild(newBlueImg);
-squareBlueButton.addEventListener("click", function() {
-
+squareBlueButton.addEventListener("click", function () {
   console.log("Button is clicked!");
 
-  squareBlueShowImg.classList.toggle("hidden");
-
+  newBlueImg.classList.toggle("hidden");
 });
-// Red Square
-// Lag variable som henter ID+ene som hører til red square
-// set opp en event listener til red square knappen
-// Bonus: Leg til funksjonenalliteten til red square i den anonyme
-
-
-
